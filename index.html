@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="login-container">
-      <h1>Login</h1>
-      <form id="login-form">
-        <label for="password">Enter Password:</label>
-        <input type="password" id="password" required />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Text with Auto-Save</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Edit the Text</h1>
+    <textarea id="text-editor" placeholder="Start typing your text here..." rows="10" cols="50"></textarea>
+    <p id="status"></p>
+    <button id="clear-btn" class="btn">Clear Text</button>
+  </div>
 
-    <div class="content-container" style="display: none">
-      <h1>Welcome!</h1>
-      <p>Here is the content from the text file:</p>
-      <pre id="text-content"></pre>
-      <button id="logout-btn">Logout</button>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
